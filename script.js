@@ -133,7 +133,7 @@
         contactLinks.forEach(function (a) {
           a.addEventListener('click', function (e) {
             e.preventDefault();
-            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
           });
         });
       } else if (mode === 'sold') {
