@@ -21,7 +21,29 @@
       "year": "2025",
       "price": "450 RON",
       "status": "available"
-    }
+    },
+    {
+      "id": "3",
+      "name": "Coș cu flori de primăvară",
+      "image": "images/Cos cu flori de primavara.jpg",
+      "size": "40 × 40 cm",
+      "technique": "Ulei",
+      "material": "Pânzǎ",
+      "year": "2020",
+      "price": "300 RON",
+      "status": "available"
+    },
+    {
+          "id": "4",
+          "name": "Flori nemuritoare",
+          "image": "images/Flori nemuritoare.jpg",
+          "size": "20 × 20 cm",
+          "technique": "Acrilic și Decorativ",
+          "material": "Pânzǎ",
+          "year": "2025",
+          "price": "50 RON",
+          "status": "available"
+        }
   ],
   "contact": {
     "email": "ioanandrita@gmail.com",

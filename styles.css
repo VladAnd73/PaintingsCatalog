@@ -291,7 +291,31 @@ body {
   }
 
   .contact-section {
-    padding: var(--spacing-xl) var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-lg);
+  }
+
+  .contact-section h1 {
+    margin: 0 0 var(--spacing-md);
+    font-size: 1.5rem;
+  }
+
+  .contact-details p {
+    margin: 0 0 0.25rem;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 1.5rem;
+  }
+
+  .social-links {
+    margin-top: var(--spacing-sm);
+  }
+
+  .scroll-hint {
+    padding: var(--spacing-md);
   }
 
   .catalog-section {
@@ -306,6 +330,16 @@ body {
 
 /* Desktop: 3 columns */
 @media (min-width: 1024px) {
+  .contact-section {
+    padding: var(--spacing-md) var(--spacing-lg);
+    max-width: 480px;
+  }
+
+  .contact-section h1 {
+    margin: 0 0 var(--spacing-sm);
+    font-size: 1.375rem;
+  }
+
   .catalog-grid {
     grid-template-columns: repeat(3, 1fr);
     max-width: 1200px;
