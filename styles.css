@@ -1,0 +1,314 @@
+/* Paintings Catalog - Mobile-first responsive styles */
+
+:root {
+  --color-bg: #faf9f7;
+  --color-text: #2c2c2c;
+  --color-muted: #666;
+  --color-accent: #4a6fa5;
+  --color-accent-hover: #3d5d8a;
+  --color-border: #e0ddd9;
+  --color-card-bg: #fff;
+  --font-sans: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1.25rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --radius: 8px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background: var(--color-card-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: var(--color-accent);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.nav-link {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  border: none;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.btn-contact {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.btn-contact:hover {
+  background: var(--color-accent-hover);
+}
+
+/* Contact section */
+.contact-section {
+  padding: var(--spacing-xl) var(--spacing-md);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.contact-section h1 {
+  margin: 0 0 var(--spacing-lg);
+  font-size: 1.75rem;
+}
+
+.contact-content {
+  font-size: 1rem;
+}
+
+.contact-details p {
+  margin: 0 0 var(--spacing-sm);
+}
+
+.contact-details a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.social-links a {
+  padding: 0.25rem 0;
+}
+
+/* Scroll hint */
+.scroll-hint {
+  text-align: center;
+  padding: var(--spacing-lg);
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+}
+
+.scroll-hint p {
+  margin: 0 0 0.5rem;
+}
+
+.scroll-chevron {
+  display: inline-block;
+  font-size: 1.5rem;
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* Catalog section */
+.catalog-section {
+  padding: var(--spacing-lg) var(--spacing-md) var(--spacing-xl);
+}
+
+.catalog-section h1,
+.catalog-section h2 {
+  margin: 0 0 var(--spacing-lg);
+  font-size: 1.5rem;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+/* Painting card */
+.painting-card {
+  background: var(--color-card-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--color-border);
+}
+
+.card-image-wrap {
+  cursor: pointer;
+}
+
+.painting-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.card-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
+.card-body {
+  padding: var(--spacing-md);
+}
+
+.card-body h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem;
+}
+
+.card-body p {
+  margin: 0 0 0.25rem;
+  font-size: 0.9375rem;
+  color: var(--color-muted);
+}
+
+.card-price {
+  margin-top: var(--spacing-sm) !important;
+  font-weight: 600;
+  color: var(--color-text) !important;
+}
+
+/* Image modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md);
+}
+
+.modal[hidden] {
+  display: none;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 85vh;
+  display: block;
+  object-fit: contain;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.modal-close:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) {
+  .header {
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+
+  .contact-section {
+    padding: var(--spacing-xl) var(--spacing-lg);
+  }
+
+  .catalog-section {
+    padding: var(--spacing-xl) var(--spacing-lg);
+  }
+
+  .catalog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 1024px) {
+  .catalog-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

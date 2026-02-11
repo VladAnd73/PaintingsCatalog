@@ -1,0 +1,35 @@
+{
+  "paintings": [
+    {
+      "id": "1",
+      "name": "Copila",
+      "image": "images/copila.jpg",
+      "size": "90 × 90 cm",
+      "technique": "Acrilic",
+      "material": "Pânzǎ",
+      "year": "2024",
+      "price": "320 RON",
+      "status": "available"
+    },
+    {
+      "id": "2",
+      "name": "Petale in univers",
+      "image": "images/Petale in univers.jpg",
+      "size": "100 × 100 cm",
+      "technique": "Acrilic",
+      "material": "Pânzǎ",
+      "year": "2025",
+      "price": "450 RON",
+      "status": "available"
+    }
+  ],
+  "contact": {
+    "email": "andrita.vlad@proton.me",
+    "phone": "+40743110422",
+    "address": "Timisoara, Romania",
+    "social": [
+      { "name": "Facebook", "url": "https://www.facebook.com/IoanaAndritaArt" },
+      { "name": "WhatsApp", "url": "https://www.facebook.com/IoanaAndritaArt" }
+    ]
+  }
+}

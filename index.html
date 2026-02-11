@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paintings Catalog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Paintings Catalog</a>
+    <nav class="nav">
+      <a href="#contact" class="btn btn-contact">Contact Us</a>
+      <a href="sold.html" class="nav-link">Sold</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact" class="contact-section">
+      <h1>Get in Touch</h1>
+      <div id="contact-content" class="contact-content">
+        <!-- Rendered by script.js -->
+      </div>
+    </section>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <p>Scroll down to view the paintings</p>
+      <span class="scroll-chevron" aria-hidden="true">⌄</span>
+    </div>
+
+    <section id="catalog" class="catalog-section">
+      <h2>Available Paintings</h2>
+      <div id="catalog-grid" class="catalog-grid">
+        <!-- Rendered by script.js -->
+      </div>
+    </section>
+  </main>
+
+  <div id="image-modal" class="modal" hidden>
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" type="button" aria-label="Close">&times;</button>
+      <img class="modal-image" src="" alt="">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    initPage('available');
+  </script>
+</body>
+</html>
