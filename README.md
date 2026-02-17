@@ -45,7 +45,7 @@ Edit `paintings.json` to add or update paintings:
 ```
 
 - **status**: `"available"` (shown on catalog page with price) or `"sold"` (shown on sold page, no price)
-- **image**: Path relative to project root. Add your image files to the `images/` folder.
+- **image**: Path relative to project root. Add your image files to the `images/` folder. Use sanitized filenames (lowercase, hyphens instead of spaces, no accents), e.g. `images/petale-in-univers.jpg`.
 
 ### Contact Info
 
