@@ -129,13 +129,6 @@
           grid.innerHTML = available.map(function (p) { return renderPaintingCard(p, true); }).join('');
         }
 
-        var contactLinks = document.querySelectorAll('a[href="#contact"]');
-        contactLinks.forEach(function (a) {
-          a.addEventListener('click', function (e) {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          });
-        });
       } else if (mode === 'sold') {
         var soldGrid = document.getElementById('sold-grid');
         if (soldGrid) {

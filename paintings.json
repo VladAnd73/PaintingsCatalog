@@ -86,7 +86,7 @@
       "material": "Pânză",
       "year": "2025",
       "price": "250 RON",
-      "status": "available"
+      "status": "sold"
     },
     {
       "id": "9",
@@ -108,7 +108,7 @@
       "material": "Pânză",
       "year": "2025",
       "price": "250 RON",
-      "status": "available"
+      "status": "sold"
     },
     {
       "id": "11",
@@ -174,7 +174,7 @@
       "material": "Pânză",
       "year": "-",
       "price": "250 RON",
-      "status": "available"
+      "status": "sold"
     },
     {
       "id": "17",
@@ -328,7 +328,7 @@
       "material": "Pânză",
       "year": "-",
       "price": "50 RON",
-      "status": "available"
+      "status": "sold"
     },
     {
       "id": "31",
