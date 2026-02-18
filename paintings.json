@@ -152,7 +152,7 @@
       "material": "Pânză",
       "year": "-",
       "price": "450 RON",
-      "status": "available"
+      "status": "sold"
     },
     {
       "id": "15",
@@ -167,7 +167,7 @@
     },
     {
       "id": "16",
-      "name": "Fața cu trandafiri",
+      "name": "Fata cu trandafiri",
       "image": "images/fata-cu-trandafiri.jpg",
       "size": "30 × 40 cm",
       "technique": "Ulei",
@@ -284,7 +284,7 @@
       "material": "Pânză",
       "year": "-",
       "price": "300 RON",
-      "status": "available"
+      "status": "sold"
     },
     {
       "id": "27",
@@ -306,7 +306,7 @@
       "material": "Pânză",
       "year": "-",
       "price": "500 RON",
-      "status": "available"
+      "status": "sold"
     },
     {
       "id": "29",
@@ -372,7 +372,7 @@
       "material": "Pânză",
       "year": "-",
       "price": "450 RON",
-      "status": "available"
+      "status": "sold"
     },
     {
       "id": "35",
