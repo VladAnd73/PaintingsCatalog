@@ -2,7 +2,7 @@
   "paintings": [
     {
       "id": "1",
-      "name": "Copilă",
+      "name": "Copila",
       "image": "images/copila.jpg",
       "size": "40 × 50 cm",
       "technique": "Acrilic",
@@ -20,7 +20,7 @@
       "material": "Pânză",
       "year": "2025",
       "price": "450 RON",
-      "status": "available"
+      "status": "sold"
     },
     {
       "id": "3",
